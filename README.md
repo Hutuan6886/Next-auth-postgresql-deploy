@@ -4,7 +4,7 @@
 - Create a client route to show how the client component and the fetching API work.
 - Create an admin route to show how to block the user in the front-end (block with RoleGate component) and back-end (block with server action and fetching API)
 - Setting:
-    + Change the credentials user information (name, phone, email, role, password, and can be able to turn on or off 2FactorAuthentication for user )
+    + Change the credentials user information with two-factor authentication (name, phone, email, role, password, and can be able to turn on or off 2FactorAuthentication for user )
     + Change the OAuth user information (name, phone, role)
       
 ## Demo
