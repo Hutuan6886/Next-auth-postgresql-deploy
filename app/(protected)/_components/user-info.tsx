@@ -9,7 +9,7 @@ interface UserInfoProps {
 //todo: userInfo là server component hay client component phụ thuộc vào parent chứa nó
 const UserInfo = ({ user }: UserInfoProps) => {
   return (
-    <div className="w-[50%] h-full flex flex-col gap-5 m-auto my-5">
+    <div className="w-full md:w-[50%] h-full flex flex-col gap-5 m-auto my-5">
       <h1 className="font-bold text-2xl">Thông Tin Tài Khoản</h1>
 
       <div className="w-full flex flex-col items-center gap-2">

@@ -91,7 +91,7 @@ const UpdateInfo = () => {
     });
   };
   return (
-    <div className="w-[75%] m-auto">
+    <div className="w-[75%] m-auto py-5">
       <Form {...updateInfoForm}>
         <form onSubmit={updateInfoForm.handleSubmit(submitUpdateInfo)}>
           <div className="flex flex-col gap-3">
@@ -196,7 +196,7 @@ const UpdateInfo = () => {
                   name="currentPassword"
                   render={({ field }) => (
                     <FormItem className="w-full">
-                      <FormLabel>Mật Khẩu Hiện Tại</FormLabel>
+                      <FormLabel>Mật Khẩu Hiện Tại <span className="text-xs italic text-red-300">(Bắt buộc)</span></FormLabel>
                       <FormControl>
                         <Input type="password" {...field} />
                       </FormControl>
@@ -214,7 +214,7 @@ const UpdateInfo = () => {
                       <FormControl>
                         <Input type="password" {...field} />
                       </FormControl>
-                      <FormMessage />
+                      <FormDescription>Mật khẩu phải có ít nhất là 8 kí tự bao gồm: 1 kí tự viết hoa, 1 kí tự viết thường, 1 chữ số và 1 kí tự đặc biệt.</FormDescription>
                     </FormItem>
                   )}
                 />

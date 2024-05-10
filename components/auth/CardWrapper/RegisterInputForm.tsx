@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -108,7 +109,10 @@ const RegisterInputForm = () => {
                 <FormControl>
                   <Input type="password" {...field} />
                 </FormControl>
-                <FormMessage />
+                <FormDescription>
+                  Mật khẩu phải có ít nhất là 8 kí tự bao gồm: 1 kí tự viết hoa,
+                  1 kí tự viết thường, 1 chữ số và 1 kí tự đặc biệt.
+                </FormDescription>
               </FormItem>
             )}
           />
